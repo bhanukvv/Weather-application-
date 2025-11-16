@@ -5,47 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Application</title>
 
-    <!--link style sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-   <!-- icon  -->
-    <link rel="icon" href="assets/images/logo img.png" type="image/png">
 
+    <link rel="icon" href="assets/images/logo img.png" type="image/png">
 </head>
+
 <body>
 
-  <div class="content-overlay">
+<div class="content-overlay">
 
-        <!-- Navigation Bar -->
-        <nav class="navbar">
-            <div class="nav-center">
-                <div class="glass-panel nav-links">
-                    <a href="#" class="nav-link">Home</a>
-                    <a href="#" class="nav-link">Search City</a>
-                    <a href="#" class="nav-link">Map</a>
-                    <a href="#" class="nav-link">Weather Report</a>
-                </div>
+    <!-- Navigation Bar (glass removed) -->
+    <nav class="navbar">
+        <div class="nav-center">
+            <div class="nav-links"> 
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Search City</a>
+                <a href="#" class="nav-link">Map</a>
+                <a href="#" class="nav-link">Weather Report</a>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-         <!-- background videos  -->
-    <video id="video-background" autoplay muted loop>
-        <source src="assets/images/sunny_day.mp4" type="video/mp4">
-        <source src="assets/images/thundering.mp4" type="video/mp4">
-        <source src="assets/images/cloudy.mp4" type="video/mp4">
-        <source src="assets/images/rain_cloudy.mp4" type="video/mp4">
-        <source src="assets/images/heavy_rain.mp4" type="video/mp4">
-       <source src="assets/images/default background.mp4" type="video/mp4">
-    </video>
+    <!-- Background video -->
+    <video id="video-background" autoplay muted loop></video>
 
+    <!-- Main Content -->
+    <main class="main-weather">
+    <div class="weather-grid">
 
+        <!-- Main Weather Panel -->
+        <div id="main-summary-panel" class="glass-panel summary-panel">
 
+            <h1 id="city-name">Loading...</h1>
 
+            <p id="current-time">--:--</p>
 
+            <div class="weather-icon">
+                <i id="weather-icon" class="fa-solid fa-cloud"></i>
+            </div>
 
+            <h2 id="weather-condition">--</h2>
 
-  <!--link java script file -->
-    <script src="assets/js/app.js"></script>
+            <p id="weather-description"></p>
 
+            <div class="main-temp">
+                <span id="main-temp">--</span><span id="temp-unit">°C</span>
+            </div>
+
+        </div>
+
+        <!-- Metrics Panel -->
+        <div class="glass-panel metrics-panel">
+            <h2>Atmospheric Details</h2>
+            <div id="detailed-metrics"></div>
+        </div>
+
+    </div>
+</main>
+</div>
+
+<script src="assets/js/app.js"></script>
 </body>
 </html>

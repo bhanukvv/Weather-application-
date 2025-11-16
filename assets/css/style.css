@@ -54,4 +54,71 @@ body {
 .nav-link:hover {
     background: rgba(255,255,255,0.3);
 }
+.glass-panel {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);
+    color: white;
+    border-radius: 1.2rem;
+}
+
+
+/* Main Weather Grid */
+.main-weather {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.weather-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+
+.summary-panel {
+    text-align: center;
+    padding: 2rem;
+}
+
+.summary-panel h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#current-time {
+    font-size: 1.3rem;
+    margin-top: 0.3rem;
+    opacity: 0.8;
+}
+
+.weather-icon i {
+    font-size: 5rem;
+    margin: 1rem 0;
+}
+
+#weather-condition {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+#weather-description {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.main-temp {
+    font-size: 5rem;
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+
+#temp-unit {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
 
